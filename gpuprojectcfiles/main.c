@@ -5,29 +5,6 @@
 #include <math.h>
 #include "helper_functions.h"
 
-//int main(int argc, const char * argv[]) {
-//    double *matrix_a;
-//    double *matrix_b;
-//    double *matrix_c;
-//    double *norm_result;
-//    int dim_a_1 = 5,dim_a_2 = 5;
-//    int dim_b_1 = 5,dim_b_2 = 5;
-//    //int i = 0,j = 0;
-//    //int count = 0;
-//    matrix_a = (double*)malloc(dim_a_1 * dim_a_2 * sizeof(double));
-//    matrix_b = (double*)malloc(dim_b_1 * dim_b_2 * sizeof(double));
-//    matrix_c = (double*)malloc(dim_b_1 * dim_a_2 * sizeof(double));
-//    populate_matrix(matrix_a,dim_a_1,dim_a_2);
-//    populate_matrix(matrix_b, dim_a_1, dim_a_2);
-//    //populate_matrix(matrix_b,dim_b_1,dim_b_2);
-//    //weight_initialize(matrix_a,dim_a_1,dim_a_2,0.1,0);
-//    //weight_initialize(matrix_b, dim_b_1, dim_b_2, 0.1, 0);
-//    matrix_multiply(matrix_a, matrix_b, matrix_c,dim_a_1, dim_a_2, dim_b_1, dim_b_2);
-//    matrix_e_multiply(matrix_a, matrix_b,matrix_c, dim_a_1, dim_a_2);
-//    //print_matrix(matrix_b,dim_a_1,dim_a_2);
-//    print_matrix(matrix_c,dim_a_1,dim_a_2);
-//    return 0;
-//}
 
 void forward_pass(double *input,double *weights_i_h,double *weights_h_o,int input_layer,int hidden_layer,int classes,int batch_size);
 int main(int argc,const char * argv[])
