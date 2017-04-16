@@ -6,6 +6,9 @@
 #include "helper_functions.h"
 
 
+
+
+
 void forward_pass(double *input,double *weights_i_h,double *weights_h_o,int input_layer,int hidden_layer,int classes,int batch_size);
 int main(int argc,const char * argv[])
 {
