@@ -19,9 +19,7 @@ int main() {
 	*/
         int itern,il = 0;
 	int number;  
-	int la;//Variable to hold each number as it is read
-	
-        //Read number using the extraction (>>) operator
+	int la;
         while ( itern < 10000*784) {
 		//Add the number to the end of the array
                 in >> number;
