@@ -63,10 +63,7 @@ void weight_initialize(double *weight,int dim1,int dim2)
     {
         for(j = 0;j<dim1;j++)
         {
-               
-
                weight[j+dim1*i] =  (double)rand()/RAND_MAX*2.0-1.0;
-           
         }
     }
     
@@ -233,5 +230,29 @@ void activation_derivative( double * activation,double * derivative, int dim1 , 
             derivative[j+dim1*i] = (1/(1+exp(-(activation[j+dim1*i]))))*(1-1/(1+exp(-(activation[j+dim1*i]))));
         }
     }
+}
+void matrix_create(double *matrix,float constant,int dim1,int dim2)
+{
+    int i,j;
+    for(i = 0;i<dim2;i++)
+    {
+        for(j = 0;j<dim1;j++)
+        {
+            matrix[j+dim1*i] = constant;
+        }
+    }
+}
+double reduce_sum(double *matrix,int dim1,int dim2)
+{
+    double temp = 0;
+    int i,j;
+    for(i = 0;i<dim2;i++)
+    {
+        for(j = 0;j<dim1;j++)
+        {
+            temp += matrix[j+dim1*i];
+        }
+    }
+    return temp;
 }
 

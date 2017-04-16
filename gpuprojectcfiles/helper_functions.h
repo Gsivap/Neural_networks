@@ -17,5 +17,7 @@ void sigmoid_activation(double *matrix,double*activation,int dim1,int dim2);
 void relu_activation(double *matrix,int dim1,int dim2);
 double max(double a,double b);
 void activation_derivative( double * activation,double * derivative, int dim1 , int dim2);
+void matrix_create(double *matrix,float constant,int dim1,int dim2);
+double reduce_sum(double *matrix,int dim1,int dom2);
 
 #endif
